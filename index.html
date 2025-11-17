@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Sudoku Website</title>
+    <title>数独世界</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -32,32 +32,30 @@
 </head>
 
 <body>
-    <div id="lang-switch"><button type="button" data-lang="en">English</button><button type="button" data-lang="zh">中文</button></div>
     <nav>
-        <a id="nav-home" href="index.html">Home</a>
-        <a id="nav-privacy" href="privacy.html">Privacy Policy</a>
-        <a id="nav-contact" href="contact.html">Contact Us</a>
+        <a id="nav-home" href="index.html">首页</a>
+        <a id="nav-privacy" href="privacy.html">隐私政策</a>
+        <a id="nav-contact" href="contact.html">联系我们</a>
     </nav>
 
-    <h1 id="title-main">Welcome to Sudoku World!</h1>
-    <p id="intro">Welcome to our Sudoku website! Whether you are a beginner or an experienced player, we have something for everyone. Dive into the world of Sudoku and challenge your mind with our puzzles.</p>
+    <h1 id="title-main">欢迎来到数独世界！</h1>
+    <p id="intro">欢迎来到我们的数独网站！无论你是初学者还是有经验的玩家，我们都能满足你的需求。畅游数独的世界，用我们的谜题挑战你的大脑。</p>
 
-    <h2 id="what">What is Sudoku?</h2>
-    <p id="what-desc">Sudoku is a logic-based, combinatorial number-placement puzzle. The objective is to fill a 9×9 grid with digits so that each column, each row, and each of the nine 3×3 subgrids that compose the grid contain all of the digits from 1 to 9.</p>
+    <h2 id="what">什么是数独？</h2>
+    <p id="what-desc">数独是一种基于逻辑的组合数字填充谜题。目标是将 9×9 的棋盘填入数字，使每一列、每一行以及九个 3×3 的子宫格都包含 1 到 9 的所有数字且不重复。</p>
 
-    <h2 id="how">How to Play Sudoku</h2>
-    <p id="how-desc">Playing Sudoku is simple but requires logical thinking and patience. Here are the basic rules:</p>
+    <h2 id="how">如何玩数独</h2>
+    <p id="how-desc">玩数独很简单，但需要逻辑思维和耐心。基本规则如下：</p>
     <ul>
-        <li id="rule-row">Each row must contain the numbers from 1 to 9, without repetitions.</li>
-        <li id="rule-col">Each column must contain the numbers from 1 to 9, without repetitions.</li>
-        <li id="rule-subgrid">Each of the nine 3×3 subgrids must contain the numbers from 1 to 9, without repetitions.</li>
+        <li id="rule-row">每一行必须包含数字 1 到 9，且不重复。</li>
+        <li id="rule-col">每一列必须包含数字 1 到 9，且不重复。</li>
+        <li id="rule-subgrid">九个 3×3 子宫格必须各自包含数字 1 到 9，且不重复。</li>
     </ul>
-    <p id="closing">Start with the easy puzzles and gradually move to the more difficult ones as you improve your skills. Happy puzzling!</p>
+    <p id="closing">从简单的谜题开始，随着技巧提升逐步挑战更高难度。祝你玩得开心！</p>
 
     <footer>
-        <p id="footer-text">&copy; 2023 Sudoku World. All rights reserved.</p>
+        <p id="footer-text">© 2023 数独世界。保留所有权利。</p>
     </footer>
-    <script>(function(){var zh={"nav-home":"首页","nav-privacy":"隐私政策","nav-contact":"联系我们","title-main":"欢迎来到数独世界！","intro":"欢迎来到我们的数独网站！无论你是初学者还是有经验的玩家，我们都能满足你的需求。畅游数独的世界，用我们的谜题挑战你的大脑。","what":"什么是数独？","what-desc":"数独是一种基于逻辑的组合数字填充谜题。目标是将 9×9 的棋盘填入数字，使每一列、每一行以及九个 3×3 的子宫格都包含 1 到 9 的所有数字且不重复。","how":"如何玩数独","how-desc":"玩数独很简单，但需要逻辑思维和耐心。基本规则如下：","rule-row":"每一行必须包含数字 1 到 9，且不重复。","rule-col":"每一列必须包含数字 1 到 9，且不重复。","rule-subgrid":"九个 3×3 子宫格必须各自包含数字 1 到 9，且不重复。","closing":"从简单的谜题开始，随着技巧提升逐步挑战更高难度。祝你玩得开心！","footer-text":"© 2023 数独世界。保留所有权利。"};var originals={};document.querySelectorAll('[id]').forEach(function(el){originals[el.id]=el.innerHTML;});function apply(l){if(l==='zh'){Object.keys(zh).forEach(function(k){var el=document.getElementById(k);if(el)el.innerHTML=zh[k];});}else{Object.keys(originals).forEach(function(k){var el=document.getElementById(k);if(el)el.innerHTML=originals[k];});}try{localStorage.setItem('lang',l);}catch(e){}}var saved=null;try{saved=localStorage.getItem('lang');}catch(e){}apply(saved||(((navigator.language||'').slice(0,2))==='zh'?'zh':'en'));var s=document.getElementById('lang-switch');if(s){s.addEventListener('click',function(e){var t=e.target&&e.target.getAttribute('data-lang');if(t)apply(t);});}})();</script>
 </body>
 
 </html>
