@@ -57,10 +57,13 @@
 
     <section class="card highlight">
       <h2>How to Submit a Deletion Request</h2>
-      <p>You can submit a data deletion request via email:</p>
+      <p>You can submit a data deletion request using web mail:</p>
       <p>
-        <a class="btn" href="mailto:Zhujing@junfengtech.com?subject=Data Deletion Request - Minesweeper">Request Deletion by Email</a>
+        <a class="btn" target="_blank" rel="noopener" href="https://mail.google.com/mail/?view=cm&fs=1&to=Zhujing@junfengtech.com&su=Data%20Deletion%20Request%20-%20Minesweeper&body=">Send with Gmail</a>
+        <a class="btn" target="_blank" rel="noopener" href="https://outlook.live.com/mail/0/deeplink/compose?to=Zhujing@junfengtech.com&subject=Data%20Deletion%20Request%20-%20Minesweeper&body=">Send with Outlook</a>
+        <a class="btn" href="mailto:Zhujing@junfengtech.com?subject=Data%20Deletion%20Request%20-%20Minesweeper">Use local mail client</a>
       </p>
+      <p class="note"><a class="inline" href="#" id="copy-email">Copy email address</a> ｜ <a class="inline" href="#" id="copy-template">Copy email template</a></p>
       <p class="note">To help verify identity and locate data, please include:</p>
       <ul>
         <li>App name: Minesweeper</li>
@@ -113,5 +116,25 @@
       <p>Last updated: 2025-12-15</p>
     </footer>
   </div>
+  <script>
+    (function(){
+      var email = 'Zhujing@junfengtech.com';
+      var subject = 'Data Deletion Request - Minesweeper';
+      var body = [
+        'Please provide the following information:',
+        'App name: Minesweeper',
+        'Google Play account email (or order number if purchases are involved)',
+        'Google Play Games nickname (if using leaderboards/achievements)',
+        'Advertising ID (AAID)',
+        'Device model, OS version, app version',
+        'Scope to delete (e.g., progress, settings, ad identifier association, Play Games association)'
+      ].join('\\n');
+      function copyText(t){ if (navigator.clipboard) { navigator.clipboard.writeText(t).then(function(){ alert('Copied'); }); } }
+      var ce = document.getElementById('copy-email');
+      var ct = document.getElementById('copy-template');
+      if (ce) ce.addEventListener('click', function(e){ e.preventDefault(); copyText(email); });
+      if (ct) ct.addEventListener('click', function(e){ e.preventDefault(); copyText('To: ' + email + '\\nSubject: ' + subject + '\\n\\n' + body); });
+    })();
+  </script>
 </body>
 </html>

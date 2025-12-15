@@ -118,10 +118,13 @@
 
     <section class="card highlight">
       <h2>如何提出删除请求</h2>
-      <p>你可以通过邮箱提交数据删除请求：</p>
+      <p>你可以通过网页邮箱提交数据删除请求：</p>
       <p>
-        <a class="btn" href="mailto:Zhujing@junfengtech.com?subject=数据删除请求 - Minesweeper">邮件请求删除</a>
+        <a class="btn" target="_blank" rel="noopener" href="https://mail.google.com/mail/?view=cm&fs=1&to=Zhujing@junfengtech.com&su=%E6%95%B0%E6%8D%AE%E5%88%A0%E9%99%A4%E8%AF%B7%E6%B1%82%20-%20Minesweeper&body=">使用 Gmail 发送</a>
+        <a class="btn" target="_blank" rel="noopener" href="https://outlook.live.com/mail/0/deeplink/compose?to=Zhujing@junfengtech.com&subject=%E6%95%B0%E6%8D%AE%E5%88%A0%E9%99%A4%E8%AF%B7%E6%B1%82%20-%20Minesweeper&body=">使用 Outlook 发送</a>
+        <a class="btn" href="mailto:Zhujing@junfengtech.com?subject=%E6%95%B0%E6%8D%AE%E5%88%A0%E9%99%A4%E8%AF%B7%E6%B1%82%20-%20Minesweeper">使用本机邮箱</a>
       </p>
+      <p class="note"><a class="inline" href="#" id="copy-email">复制邮箱地址</a> ｜ <a class="inline" href="#" id="copy-template">复制邮件模板</a></p>
       <p class="note">为便于确认身份与定位数据，请在邮件中提供以下信息：</p>
       <ul>
         <li>应用名称：Minesweeper 扫雷</li>
@@ -174,5 +177,25 @@
       <p>最后更新：2025-12-15</p>
     </footer>
   </div>
+  <script>
+    (function(){
+      var email = 'Zhujing@junfengtech.com';
+      var subject = '数据删除请求 - Minesweeper';
+      var body = [
+        '请按以下格式提供信息：',
+        '应用名称：Minesweeper 扫雷',
+        'Google Play 账户邮箱（或订单号，如涉及购买）',
+        'Google Play 游戏昵称（如使用排行榜/成就功能）',
+        '设备广告标识符 AAID（设置 → Google → 广告 → 广告 ID）',
+        '设备型号与系统版本、应用版本号',
+        '希望删除的数据范围（例如：进度、设置、广告标识关联、游戏服务关联）'
+      ].join('\\n');
+      function copyText(t){ if (navigator.clipboard) { navigator.clipboard.writeText(t).then(function(){ alert('已复制'); }); } }
+      var ce = document.getElementById('copy-email');
+      var ct = document.getElementById('copy-template');
+      if (ce) ce.addEventListener('click', function(e){ e.preventDefault(); copyText(email); });
+      if (ct) ct.addEventListener('click', function(e){ e.preventDefault(); copyText('收件人：' + email + '\\n主题：' + subject + '\\n\\n' + body); });
+    })();
+  </script>
 </body>
 </html>
