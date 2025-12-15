@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minesweeper — Data Deletion Request</title>
+  <meta name="robots" content="noindex">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --primary: #2563eb;
+      --primary-600: #1d4ed8;
+      --ok: #16a34a;
+      --warn: #f59e0b;
+    }
+    html, body {
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      line-height: 1.6;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 24px; }
+    header { padding: 8px 0 16px; }
+    header h1 { margin: 0 0 8px; font-size: 28px; }
+    header p { margin: 4px 0; color: var(--muted); }
+    .card { background: var(--card); border-radius: 12px; padding: 20px; margin: 16px 0; box-shadow: 0 10px 20px rgba(0,0,0,0.25); }
+    .highlight { border: 1px solid rgba(37,99,235,0.35); }
+    h2 { margin: 0 0 12px; font-size: 20px; }
+    ul { padding-left: 18px; }
+    li { margin: 6px 0; }
+    .btn { display: inline-block; background: var(--primary); color: #fff; text-decoration: none; padding: 10px 16px; border-radius: 8px; font-weight: 600; margin: 8px 0 12px; }
+    .btn:hover { background: var(--primary-600); }
+    .note { color: var(--muted); font-size: 14px; }
+    .badges { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0 0; }
+    .badge { border: 1px solid rgba(255,255,255,0.12); color: var(--muted); border-radius: 999px; padding: 4px 10px; font-size: 12px; }
+    footer { margin: 24px 0 8px; color: var(--muted); font-size: 14px; }
+    a.inline { color: #93c5fd; text-decoration: none; }
+    a.inline:hover { text-decoration: underline; }
+  </style>
+  <meta name="description" content="Minesweeper (JunfengTech) data deletion request: how to submit, what is deleted or retained, and retention periods.">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Minesweeper — Data Deletion Request</h1>
+      <p>Developer: JunfengTech</p>
+      <div class="badges">
+        <span class="badge">App: Minesweeper</span>
+        <span class="badge">Platform: Google Play</span>
+      </div>
+      <p><a class="inline" href="data-deletion.html">中文</a></p>
+    </header>
+
+    <section class="card highlight">
+      <h2>How to Submit a Deletion Request</h2>
+      <p>You can submit a data deletion request via email:</p>
+      <p>
+        <a class="btn" href="mailto:Zhujing@junfengtech.com?subject=Data Deletion Request - Minesweeper">Request Deletion by Email</a>
+      </p>
+      <p class="note">To help verify identity and locate data, please include:</p>
+      <ul>
+        <li>App name: Minesweeper</li>
+        <li>Google Play account email (or order number if purchases are involved)</li>
+        <li>Google Play Games nickname (if using leaderboards/achievements)</li>
+        <li>Advertising ID (AAID)</li>
+        <li>Device model, OS version, app version</li>
+        <li>Scope to delete (e.g., progress, settings, ad identifier association, Play Games association)</li>
+      </ul>
+      <p class="note">We will process your request as soon as possible and respond within the legally required timeframe.</p>
+    </section>
+
+    <section class="card">
+      <h2>Data Deleted or Retained</h2>
+      <p>We do not store your game progress or settings on our servers; only local storage and third‑party services are used.</p>
+      <ul>
+        <li><strong>On‑device data (progress, settings)</strong>: we will guide you to clear this data on your device.</li>
+        <li><strong>Support email request records</strong>: used only to process your request; retained for up to <strong>90 days</strong> and then deleted.</li>
+        <li><strong>Purchase records</strong>: maintained by Google Play; developers cannot delete them, but we can help you contact Google Support.</li>
+        <li><strong>Leaderboards and achievements</strong>: maintained by Google Play Games; follow official guidance to manage or delete.</li>
+        <li><strong>Ads‑related identifiers (AAID, IP, etc.)</strong>: handled by Google Mobile Ads SDK. We will disable personalization and help delete associations, subject to Google policies and platform limits.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Retention Periods</h2>
+      <ul>
+        <li>Request tickets and communications: retained for up to <strong>90 days</strong>, then deleted.</li>
+        <li>Invoice data required by law or audit: retained as legally required.</li>
+        <li>Third‑party service data: follow each service’s policies and retention periods (Google Play, Google Ads).</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Self‑Service Deletion and Management</h2>
+      <ul>
+        <li><strong>Clear on‑device data</strong>: Android Settings → Apps → Minesweeper → Storage & cache → Clear storage.</li>
+        <li><strong>Reset Advertising ID</strong>: Settings → Google → Ads → Reset advertising ID (Android 12+ can zero the ID).</li>
+        <li><strong>Manage Play Games data</strong>: see Google support.</li>
+      </ul>
+      <p>
+        <a class="inline" href="https://support.google.com/googleplay/answer/3118761?hl=en" target="_blank" rel="noopener">Google Support: Delete Play Games data</a>
+        ｜ 
+        <a class="inline" href="https://policies.google.com/technologies/ads?hl=en" target="_blank" rel="noopener">Google Ads & Privacy</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>Contact email: Zhujing@junfengtech.com</p>
+      <p>Last updated: 2025-12-15</p>
+    </footer>
+  </div>
+</body>
+</html>

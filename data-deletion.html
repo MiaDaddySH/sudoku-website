@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minesweeper 扫雷 - 数据删除请求</title>
+  <meta name="robots" content="noindex">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --primary: #2563eb;
+      --primary-600: #1d4ed8;
+      --ok: #16a34a;
+      --warn: #f59e0b;
+    }
+    html, body {
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      padding: 8px 0 16px;
+    }
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+    }
+    header p {
+      margin: 4px 0;
+      color: var(--muted);
+    }
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 16px 0;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+    .highlight {
+      border: 1px solid rgba(37,99,235,0.35);
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 20px;
+    }
+    ul {
+      padding-left: 18px;
+    }
+    li {
+      margin: 6px 0;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-weight: 600;
+      margin: 8px 0 12px;
+    }
+    .btn:hover {
+      background: var(--primary-600);
+    }
+    .note {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .badges {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 8px 0 0;
+    }
+    .badge {
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 12px;
+    }
+    footer {
+      margin: 24px 0 8px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    a.inline {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+    a.inline:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <meta name="description" content="Minesweeper 扫雷（JunfengTech）数据删除请求页面：说明如何提出删除申请、删除与保留的数据类型及保留期限。">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Minesweeper 扫雷 — 数据删除请求</h1>
+      <p>开发者：JunfengTech（钧锋科技）</p>
+      <div class="badges">
+        <span class="badge">应用：Minesweeper 扫雷</span>
+        <span class="badge">平台：Google Play</span>
+      </div>
+      <p><a class="inline" href="data-deletion_en.html">English</a></p>
+    </header>
+
+    <section class="card highlight">
+      <h2>如何提出删除请求</h2>
+      <p>你可以通过邮箱提交数据删除请求：</p>
+      <p>
+        <a class="btn" href="mailto:Zhujing@junfengtech.com?subject=数据删除请求 - Minesweeper">邮件请求删除</a>
+      </p>
+      <p class="note">为便于确认身份与定位数据，请在邮件中提供以下信息：</p>
+      <ul>
+        <li>应用名称：Minesweeper 扫雷</li>
+        <li>Google Play 账户邮箱（或订单号，如涉及购买）</li>
+        <li>Google Play 游戏昵称（如使用排行榜/成就功能）</li>
+        <li>设备广告标识符 AAID（设置 → Google → 广告 → 广告 ID）</li>
+        <li>设备型号与系统版本、应用版本号</li>
+        <li>希望删除的数据范围（例如：进度、设置、广告标识关联、游戏服务关联）</li>
+      </ul>
+      <p class="note">我们将在收到请求后尽快处理，并在法定时限内完成或告知结果。</p>
+    </section>
+
+    <section class="card">
+      <h2>将会删除或保留的数据</h2>
+      <p>我们不在服务器存储你的游戏进度或设置，仅使用本地存储和第三方服务。</p>
+      <ul>
+        <li><strong>本机数据（进度、设置）</strong>：我们将指导你在设备上清除该数据。</li>
+        <li><strong>支持邮箱中的请求记录</strong>：仅用于处理你的申请，最长保留 <strong>90 天</strong> 后删除。</li>
+        <li><strong>购买记录</strong>：由 Google Play 保管，开发者无法删除，但可协助你联系 Google 支持。</li>
+        <li><strong>排行榜与成就</strong>：由 Google Play 游戏服务保管，你可参考官方指南进行管理或删除。</li>
+        <li><strong>广告相关标识（AAID、IP 等）</strong>：由 Google 移动广告 SDK 处理，我们会停用个性化并协助删除关联，能力受 Google 政策与平台限制。</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>保留期限</h2>
+      <ul>
+        <li>请求工单与通信记录：最长保留 <strong>90 天</strong>，期满即删除。</li>
+        <li>法律或审计需要的发票信息：按法律法规要求保留。</li>
+        <li>第三方服务数据：遵循各服务（Google Play、Google 广告）的政策与保留期限。</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>自助删除与管理</h2>
+      <ul>
+        <li><strong>清除本机数据</strong>：Android 设置 → 应用 → Minesweeper 扫雷 → 存储与缓存 → 清除存储。</li>
+        <li><strong>重置广告 ID</strong>：设置 → Google → 广告 → 重置广告 ID（Android 12 及以上可将 ID 清零）。</li>
+        <li><strong>管理 Play 游戏数据</strong>：参考 Google 支持说明。</li>
+      </ul>
+      <p>
+        <a class="inline" href="https://support.google.com/googleplay/answer/3118761?hl=zh-Hans" target="_blank" rel="noopener">Google 支持：删除 Play 游戏数据</a>
+        ｜ 
+        <a class="inline" href="https://policies.google.com/technologies/ads?hl=zh-Hans" target="_blank" rel="noopener">Google 广告与隐私</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>联系邮箱：Zhujing@junfengtech.com</p>
+      <p>最后更新：2025-12-15</p>
+    </footer>
+  </div>
+</body>
+</html>
